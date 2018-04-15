@@ -1,0 +1,9 @@
+.btn{
+    display:inline-block;
+}
+.btn > a > img{
+    height:96px;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+}

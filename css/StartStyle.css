@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.flex {
+
+    /* flexbox setup */
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    overflow: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.flex > div {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 20vw;
+    /* To make the transition work nicely.  (Transitions to/from
+                         "width:auto" are buggy in Gecko and Webkit, at least.
+                         See http://bugzil.la/731886 for more info.) */
+
+    -webkit-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-out;
+}
+
+/* colors */
+.flex > div:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home1.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home1.png");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home1.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home1.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../image/home1.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex > div:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home2.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home2.png");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home2.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home2.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../image/home2.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex > div:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home3.png");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home3.png");
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home3.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home3.png");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../image/home3.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/home3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex > div:nth-child(1):hover {
+    background-image: url("../image/home1.png");
+    width: 25vw;
+}
+
+.flex > div:nth-child(2):hover {
+    background-image: url("../image/home2.png");
+    width: 25vw;
+}
+
+.flex > div:nth-child(3):hover {
+    background-image: url("../image/home3.png");
+    width: 25vw;
+}
+
+form {
+    background-color: transparent; /* Green */
+    letter-spacing: 2px;
+    font: 600 2vw Arial;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 5vh;
+}
+
+input {
+    background-color: transparent;
+    padding: 1em 2em;
+    line-height: 1em;
+    height: 3em;
+    border: 3px solid white;
+    border-radius: 40px;
+    opacity: 0.75;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        font: 600 3vw Arial;
+    }
+}

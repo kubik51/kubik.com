@@ -1,0 +1,95 @@
+body, html {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.bg {
+    background-image: url("../image/HomePicture.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+footer {
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+form {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 75%;
+    background-color: transparent; /* Green */
+    letter-spacing: 2px;
+    font: 600 2vw Arial;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    padding: 1em 2em;
+    line-height: 1em;
+    height: 3em;
+    border: 3px solid white;
+    border-radius: 40px;
+    opacity: 0.75;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+.sidebar {
+    float: right;
+    height: 35em;
+    width: 100%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    position: relative;
+    display: none;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        font: 600 3vw Arial;
+    }
+}

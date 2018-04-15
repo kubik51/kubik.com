@@ -1,0 +1,15 @@
+input:valid{
+    background-color:rgba(0,255,0,0.6);
+}
+input:invalid{
+    background-color:red;
+}
+input:required{
+    background-color:yellow;
+}
+input[type=text]{
+    background-color:rgba(0,0,255,0.6);
+}
+:required{
+    background-color:yellow;
+}

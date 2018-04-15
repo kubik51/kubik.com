@@ -1,0 +1,129 @@
+body {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.navbar-default {
+    margin-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #C7CAE7;
+}
+
+.navbar {
+    background-color: #132639;
+    border-radius: 0;
+    border-color: #132639;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand > img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+.navbar-nav-main {
+    padding-left: 35%;
+}
+
+tr {
+    display: table-row;
+    text-align: left;
+}
+
+td {
+    width: 50em;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    color: #C7CAE7;
+}
+
+main {
+    background-image: url("../image/Anivia_OriginalSkin.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-col {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.td-main {
+    color: #1C5998;
+}
+
+footer {
+    background-color: black;
+    height: 10%;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs > li > a {
+    border-radius: 0;
+}
+
+main {
+    min-height: 60em;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.contact-btn {
+    display: inline-block;
+}
+
+span.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.padding0 {
+    padding: 0;
+}
+
+.carousel-dot {
+    width: 30px !important;
+    border-radius: 0 !important;
+    height: 3px !important;
+}
+
+footer p {
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #1C5998;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.navbar {
+    margin: 0!important;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #1C5998 !important;
+}
